@@ -5,9 +5,9 @@ html, body {
 
 .index-slider {
 	margin-top: 54px;
-	padding-top: 65px;
+	padding-top: 8%;
 	width: 100%;
-	height: calc(100% - 160px);
+	@include prefixer(height, calc(100% - 160px));
 	@include box-sizing(border-box);
 	position: relative;
 
@@ -18,6 +18,8 @@ html, body {
 		@include box-sizing(border-box);
 		overflow: hidden;
 		position: relative;
+
+
 
 		p {
 			width: 100%;
@@ -81,6 +83,6 @@ html, body {
 	top: 66%;
 	left: 56%;
 	background: $generic-color;
-	box-shadow: 0 5px 50px 0 $generic-color;
+	@include prefixer(box-shadow, 0 5px 50px 0 $generic-color);
 	text-transform: uppercase;
 }

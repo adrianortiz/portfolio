@@ -30,12 +30,18 @@
         @yield('content')
 
         <footer>
-            <ul>
-                <li><a href="#">linkedin</a></li>
-                <li><a href="#">pinterest</a></li>
-                <li><a href="#">facebook</a></li>
-            </ul>
-            <a href="#">codizer 2017 <span></span></a>
+            <div class="footer-number-count">
+                <h3>01</h3>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/adrianortizmartinez/">linkedin</a></li>
+                    <li><a href="https://www.pinterest.com/codizerdev/portafolio/">pinterest</a></li>
+                    <li><a href="https://www.facebook.com/CodizerSoftware/">facebook</a></li>
+                </ul>
+                <a href="http://codizer.com/">codizer 2017 <span></span></a>
+            </div>
+            
         </footer>
 
         <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
