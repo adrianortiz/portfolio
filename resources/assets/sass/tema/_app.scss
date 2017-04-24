@@ -1,0 +1,22 @@
+*, *:focus {
+  outline:0;
+  font-family: 'Poppins', sans-serif;
+  @include box-sizing(border-box);
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+}
+
+body {
+  background-color: $background;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}

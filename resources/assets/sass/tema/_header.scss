@@ -1,0 +1,65 @@
+.font-weight-300 {
+	font-weight: 300;
+}
+
+.font-weight-600 {
+	font-weight: 600;
+}
+
+header {
+	margin: 0;
+	padding: 11px 18px;
+	width: 100%;
+	height: 54px;
+	float: left;
+	text-transform: uppercase;
+	background: $header-bg-white;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		float: left;
+		margin-top: 7px;
+	}
+
+	span.logo-bar {
+		margin: 0 12px;
+		display: inline-block;
+		width: 3px;
+		height: 32px;
+		background-color: $generic-color;
+		border-radius: 3px;
+		float: left;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		float: right;
+
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: right;
+
+			a {
+				margin: 0;
+				padding: 0;
+			}
+
+			a.txt-portafolio {
+				font-size: 16px;
+			}
+
+			a.txt-view {
+				font-size: 10px;
+				color: $generic-color;
+			}
+		}
+	}
+}
