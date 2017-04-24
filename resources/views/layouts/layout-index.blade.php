@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title', 'Codizer')</title>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ asset('js/slick/slick.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('js/slick/slick-theme.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/index.min.css') }}">
@@ -16,14 +16,14 @@
     <body>
 
         <header>
-            <a href="#" class="logo-codizer">
+            <a href="http://codizer.com/" class="logo-codizer">
                 <h1 class="font-weight-600">Codizer</h1>
                 <span class="logo-bar"></span>
                 <h1 class="font-weight-300">Dev</h1>
             </a>
             <ul>
-                <li><a href="#" class="font-weight-600 txt-portafolio">Porta<span class="font-weight-300">folio</span></a></li>
-                <li><a href="#" class="font-weight-600 txt-view">View all</a></li>
+                <li><a href="http://codizer.com/" class="font-weight-600 txt-portafolio">Port<span class="font-weight-300">folio</span></a></li>
+                <li><a href="https://www.pinterest.com/codizerdev/portafolio/" class="font-weight-600 txt-view">View all</a></li>
             </ul>
         </header>
 

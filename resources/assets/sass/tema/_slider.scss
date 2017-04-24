@@ -5,7 +5,7 @@ html, body {
 
 .index-slider {
 	margin-top: 54px;
-	padding-top: 8%;
+	padding-top: 7.6%;
 	width: 100%;
 	@include prefixer(height, calc(100% - 160px));
 	@include box-sizing(border-box);

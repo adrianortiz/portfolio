@@ -1,3 +1,12 @@
+/**
+    Author: Adrian Ortiz
+
+    Company: Codizer - 2017
+    Type: Personal Portfolio
+    website: www.codizer.com
+**/
+
+
 (function($) {
     var App = { init: function() {
         App.SliderIndex();
@@ -8,11 +17,13 @@
             var $status = $('.pagingInfo');
             var $slickElement = $('.index-slider');
 
+            var $numberSlider = $('.footer-number-count h3');
+
             $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
                 //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
                 var i = (currentSlide ? currentSlide : 0) + 1;
                 $status.text(i + '/' + slick.slideCount);
-                console.log(i);
+                $numberSlider.text("0" + i);
             });
 
             $slickElement.slick({
@@ -30,7 +41,7 @@
 
         ConfigMenuMobile: function() {
 
-            atvImg();
+            // atvImg();
 
             /*
             $('#menu-a').click( function() {

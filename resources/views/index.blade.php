@@ -10,6 +10,7 @@
     <div class="container">
 
         <div class="index-slider">
+
 		 	<div class="slider-item">
 				<p>Power GYM (In progress)</p>
 				<h1><span>P</span>ower GYM (In progress)</h1>
@@ -19,14 +20,28 @@
 				<a href="#" class="generic-btn">Read more</a>
 		  	</div>
 
-		  	<div class="slider-item">
-				<p>Codizer data</p>
-				<h1><span>C</span>odizer Data</h1>
+
+			<div class="slider-item">
+				<p>Data analysis</p>
+				<h1><span>D</span>ata analysis</h1>
 				<div class="slider-img">
 					<img src="{{ asset('media/photo-item/img-02.png') }}" />
 				</div>
 				<a href="#" class="generic-btn">Read more</a>
 		  	</div>
+
+
+
+			<div class="slider-item">
+				<p>Comercio aplicable</p>
+				<h1><span>C</span>omercio aplicable</h1>
+				<div class="slider-img">
+					<img src="{{ asset('media/photo-item/img-00.png') }}" />
+				</div>
+				<a href="#" class="generic-btn">Read more</a>
+		  	</div>
+
+		  	
 
 		  	<div class="slider-item">
 				<p>Tecnomecánica mx</p>
