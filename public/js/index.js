@@ -5,8 +5,6 @@
     },
         SliderIndex: function() {
 
-            console.log('DEMOSTRATION');
-
             var $status = $('.pagingInfo');
             var $slickElement = $('.index-slider');
 
@@ -31,6 +29,8 @@
         },
 
         ConfigMenuMobile: function() {
+
+            atvImg();
 
             /*
             $('#menu-a').click( function() {

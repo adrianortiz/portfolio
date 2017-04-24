@@ -9,8 +9,9 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('js/slick/slick.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('js/slick/slick-theme.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/index.min.css') }}">
-        
+
         @yield('extra-css')
+
     </head>
     <body>
 
@@ -39,8 +40,9 @@
 
         <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{ asset('js/slick/slick.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/atv/atvImg-min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
-        @yield('extra-scripts')
+        @yield('extra-js')
         
     </body>
 </html>
