@@ -7,6 +7,9 @@
 @endsection
 
 @section('content')
+
+	@include('partials/modal')
+	
     <div class="container">
 
         <div class="index-slider">
@@ -17,7 +20,7 @@
 				<div class="slider-img">
 					<img src="{{ asset('media/photo-item/img-01.png') }}" />
 				</div>
-				<a href="#" class="generic-btn">Read more</a>
+				<a href="#" class="generic-btn show-modal-btn">Read more</a>
 		  	</div>
 
 
@@ -27,7 +30,7 @@
 				<div class="slider-img">
 					<img src="{{ asset('media/photo-item/img-02.png') }}" />
 				</div>
-				<a href="#" class="generic-btn">Read more</a>
+				<a href="#" class="generic-btn show-modal-btn">Read more</a>
 		  	</div>
 
 
@@ -38,7 +41,7 @@
 				<div class="slider-img">
 					<img src="{{ asset('media/photo-item/img-00.png') }}" />
 				</div>
-				<a href="#" class="generic-btn">Read more</a>
+				<a href="#" class="generic-btn show-modal-btn">Read more</a>
 		  	</div>
 
 		  	
@@ -49,11 +52,13 @@
 				<div class="slider-img">
 					<img src="{{ asset('media/photo-item/img-03.png') }}" />
 				</div>
-				<a href="#" class="generic-btn">Read more</a>
+				<a href="#" class="generic-btn show-modal-btn">Read more</a>
 		  	</div>
 		</div>
 
+
     </div>
+
 @endsection
 
 @section('extra-js')

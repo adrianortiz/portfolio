@@ -1,0 +1,226 @@
+.blur-effect {
+	@include prefixer(filter, blur(14px));
+}
+
+.status-modal {
+	display: inherit !important;
+	opacity: 1 !important;
+	@include transition(.3s ease);
+}
+
+.modal-dark {
+	@include transition(.3s ease);
+	background-color: rgba($black, 0.84) !important;
+
+	.project-info {
+		@include transition(.3s ease);
+		opacity: 0;
+		width: 0px !important;
+	}
+
+	.project-full-img {
+		@include transition(.3s ease);
+		@include prefixer(width, calc(100% - 120px) !important);
+		padding: 30px 0 !important;
+		img {
+			@include transition(.3s ease);
+			width: 95% !important;
+		}
+	}
+}
+
+.modal {
+	display: none;
+	opacity: 0;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	z-index: 10;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 54px;
+	@include prefixer(height, calc(100% - 54px));
+	@include box-sizing(border-box);
+	background-color: rgba($background-modal, 0.74);
+	@include transition(.3s ease);
+
+	.project-info {
+		float: left;
+		width: 320px;
+		height: 100%;
+		overflow: auto;
+		@include box-sizing(border-box);
+		@include transition(.3s ease);
+
+		.project-info-header {
+			margin-top: 22px;
+			margin-bottom: 20px;
+			width: 143px;
+			height: 34px;
+			color: $white;
+
+			ul {
+				padding: 0px;
+				margin: 0px;
+
+				li {
+					list-style: none;
+					color: $white;
+					float: left;
+					padding: 8px 12px;
+				}
+
+				li:nth-child(1) {
+					background-color: $black;
+					font-weight: 500;
+					font-size: 18px;
+				}
+
+				li:nth-child(2) {
+					width: 85px;
+					background-color: $generic-color;
+					font-weight: 300;
+					font-size: 14px;
+				}
+			}
+		}
+
+		h1, h2, p, ul {
+			padding: 0 20px;
+		}
+
+		h1, h2 {
+			padding-top: 11px;
+			padding-bottom: 7px;
+			text-transform: uppercase;
+			background-color: rgba($white, 0.25);
+		}
+
+		h1 {
+			font-size: 24px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		ul {
+			li {
+				list-style: none;
+			}
+		}
+
+		ul li, p {
+			text-align: justify;
+			font-size: 14px;
+			color: #000000;
+			line-height: 20px;
+		}
+	}
+
+	.project-full-img {
+		float: left;
+		@include prefixer(width, calc(100% - 440px));
+		height: 100%;
+		overflow: auto;
+		@include box-sizing(border-box);
+		background-color: transparent;
+		text-align: center;
+		padding: 24px 0;
+		@include transition(.3s ease);
+		
+		img {
+			width: 90%;
+			height: auto;
+			background: #FFFFFF;
+			@include prefixer(box-shadow, 0 12px 46px 0 rgba(0,0,0,0.28));
+			@include transition(.3s ease);
+		}
+	}
+
+	.project-options {
+		float: left;
+		width: 120px;
+		height: 100%;
+		overflow: auto;
+		@include box-sizing(border-box);
+		background-color: transparent;
+		@include transition(.3s ease);
+
+		.project-mini-img {
+			padding-top: 10px;
+			width: 100%;
+			@include prefixer(height, calc(100% - 130px));
+			background-color: transparent;
+			overflow: auto;
+			@include box-sizing(border-box);
+
+			div.mini-active {
+				border: solid 3px $generic-color;
+			}
+
+			div {
+				margin: 0 auto;
+				padding: 0 auto;
+				margin-top: 26px;
+				width: 73px;
+				height: 73px;
+				border-radius: 10px;
+				overflow: hidden;
+				background-color: rgba($background, 0.5);
+				@include prefixer(box-shadow, 10px 24px 78px 0 rgba(0,0,0,0.28));
+				cursor: pointer;
+				border: solid 3px transparent;
+				@include transition(.3s ease);
+				@include box-sizing(border-box);
+
+				&:hover {
+					border: solid 3px $generic-color;
+				}
+
+				img {
+					width: 200%;
+					height: auto;
+				}
+			}
+		}
+
+		.content-options {
+			width: 100%;
+			height: 130px;
+			background-color: transparent;
+			@include box-sizing(border-box);
+			
+			button {
+				margin: 0 auto;
+				padding: 0 auto;
+				border: solid 0 transparent;
+				position: relative;
+				display: block;
+				text-align: center;
+				cursor: pointer;
+
+				img {
+					@include centrarXY();
+				}
+			}
+
+			.btn-full {
+				width: 44px;
+				height: 44px;
+				border-radius: 42px;
+				background-color: $white;
+				@include prefixer(box-shadow, 0 5px 11px 0 rgba(0,0,0,0.27));
+			}
+
+			.btn-close {
+				margin-top: 14px;
+				width: 54px;
+				height: 54px;
+				border-radius: 50px;
+				background-color: $red;
+				@include prefixer(box-shadow, 0 5px 11px 0 rgba(0,0,0,0.27));
+			}
+		}
+	}
+}

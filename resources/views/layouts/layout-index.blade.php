@@ -46,6 +46,7 @@
 
         <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{ asset('js/slick/slick.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/atv/atvImg-min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
         @yield('extra-js')

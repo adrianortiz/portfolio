@@ -1,9 +1,11 @@
-$generic-color: #1B91F3;
+$generic-color: #1B91F3; /* 1B91F3 6C87C7 9012FE F6A623 */
 $white: #FFFFFF;
 $black: #000000;
 $gray: #4A4A4A;
 $background: #F7F7F5;
-$header-bg-white: rgba(250,250,250,0.72);
+$background-modal: #DADADA;
+$red: #FF435A;
+$header-bg-white: rgba(#F2F2F2, 0.5); /*rgba(250,250,250,0.72);*/
 
 // MIXINS
 @mixin prefixer($property, $value, $prefixes: webkit moz ms o) {
@@ -31,8 +33,6 @@ $header-bg-white: rgba(250,250,250,0.72);
 /*
     @include box-sizing(border-box);
     @include transition(.3s ease);
-
     @include prefixer(box-shadow, 0 5px 50px 0 $generic-color);
-    
     @include prefixer(width, calc(100% - 214px));
 */

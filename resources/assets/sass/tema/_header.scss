@@ -13,10 +13,11 @@ header {
 	height: 54px;
 	float: left;
 	text-transform: uppercase;
-	background: $header-bg-white;
+	background-color: rgba($header-bg-white, 1);
 	position: absolute;
 	top: 0;
 	z-index: 999;
+	@include transition(.3s ease);
 
 	h1 {
 		margin: 0;
@@ -24,6 +25,7 @@ header {
 		font-size: 18px;
 		float: left;
 		margin-top: 7px;
+		@include transition(.3s ease);
 	}
 
 	span.logo-bar {
@@ -54,11 +56,32 @@ header {
 
 			a.txt-portafolio {
 				font-size: 16px;
+				@include transition(.3s ease);
 			}
 
 			a.txt-view {
 				font-size: 10px;
 				color: $generic-color;
+			}
+		}
+	}
+}
+
+.dark-header {
+	background-color: rgba($black, 0.88) !important;
+	@include transition(.3s ease);
+
+	h1 {
+		color: $white;
+		@include transition(.3s ease);
+	}
+
+	ul {
+		li {
+			a.txt-portafolio {
+				font-size: 16px;
+				color: $white;
+				@include transition(.3s ease);
 			}
 		}
 	}
