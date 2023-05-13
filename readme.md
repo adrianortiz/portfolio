@@ -1,3 +1,42 @@
+## Codizer Portafolio
+
+Aplicación Web basada en Laravel para la gestión de un Portafolio personal
+
+**Característica:**
+* Slider de Proyectos
+* Vista previa de un proyecto
+* Pantalla completa de vista previa
+
+Actualmente Codizer Core no esta terminado y posiblemente presente anomalias en su código fuente, por ende, se recomienda no usarlo en un ambiente productivo.
+
+**Eres libre de usar y/o distribuir este producto.**
+
+### ¿Cómo instalar?
+
+* Descargar el proyecto dentro de un directorio especifico
+* Entrar al directorio del proyecto desde el Explorador de Archivos/Finder
+
+    - Copiar archivo **.env.example** y renombrar a **.env**
+    - Añadir la configuración de la conexión de la BD al archivo **.env**
+
+
+* Entrar al directorio del proyecto desde Consola/Terminal
+
+    - Instalar dependencias: `composer install`
+    - Generar clave del proyecto:  `php artisan key:generate`
+
+* Iniciar proyecto
+
+
+## Imagenes del proyecto
+
+![Codizer Portafolio Slider](https://github.com/adrianortiz/portfolio/blob/master/public/media/git-hub-img/codizer-portafolio-01.png)
+
+![Codizer Portafolio Vista previa](https://github.com/adrianortiz/portfolio/blob/master/public/media/git-hub-img/codizer-portafolio-02.png)
+
+![Codizer Portafolio Pantalla completa](https://github.com/adrianortiz/portfolio/blob/master/public/media/git-hub-img/codizer-portafolio-03.png)
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
